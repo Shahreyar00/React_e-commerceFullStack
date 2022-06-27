@@ -1,0 +1,45 @@
+.pl__container{
+    .title{
+        margin: 20px 0px 0px 20px;
+        font-size: 24px;
+        text-align: center;
+        text-transform: capitalize;
+        color: rgb(149, 148, 148);
+    }
+
+    .filterContainer{
+        display: flex;
+        justify-content: space-between;
+
+        .filter{
+            margin: 20px;
+
+            @media screen and (max-width:768px){
+                width: 0px 20px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .filterText{
+                font-size: 20px;
+                font-weight: 600;
+                margin-right: 20px;
+
+                @media screen and (max-width:768px){
+                    margin-right: 0px;
+                }
+            }
+
+            select{
+                padding: 10px;
+                margin-right: 20px;
+                border-radius: 10px;
+                outline: none;
+
+                @media screen and (max-width:768px){
+                    margin: 10px 0px;
+                }
+            }
+        }
+    }
+}

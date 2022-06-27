@@ -1,0 +1,118 @@
+.nav__container{
+    height: 60px;
+
+    @media screen and (max-width:768px){
+        height: 50px;
+    }
+
+    .nav__wrapper{
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .nav__left{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+
+            .language{
+                font-size: 14px;
+                cursor: pointer;
+                padding: 8px;
+                border-radius: 50%;
+                background: #313bac;
+                color: white;
+                box-shadow: 0 0 5px #8a93fa;
+
+                @media only screen and (max-width:768px){
+                    display: none;
+                }
+            }
+
+            .nav__searchContainer{
+                border: 0.5px solid lightblue;
+                display: flex;
+                align-items: center;
+                border-radius: 10px;
+                padding: 5px;
+
+                input{
+                    border: none;
+                    outline: none;
+                    background-color: transparent;
+
+                    @media screen and (max-width:768px){
+                        width: 50px;
+                    }
+                }
+
+                .nav__icon{
+                    font-size: 20px;
+                    color: gray;
+                }
+
+                @media screen and (max-width:768px){
+                    margin-left: 0px;
+                }
+            }
+        }
+
+        .nav__center{
+            flex: 1;
+            text-align: center;
+
+            .logo{
+                font-weight: bold;
+                cursor: pointer;
+                color: #0210a2;
+
+                @media screen and (max-width:768px){
+                    font-size: 24px;
+                }
+            }
+        }
+
+        .nav__right{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-right: 10px;
+
+            @media screen and (max-width:768px){
+                flex: 2;
+                justify-content: center;
+            }
+
+
+            .menuItem{
+                font-size: 14px;
+                cursor: pointer;
+                margin-left: 20px;
+                padding: 5px 10px;
+                text-transform: uppercase;
+                box-shadow: 0 0 5px rgba(0,0,0,0.2);
+                background: #313bac;
+                color: white;
+                box-shadow: 0 0 5px #8a93fa;
+                border-radius: 10px;
+
+                @media screen and (max-width:768px){
+                    font-size: 12px;
+                    margin-left: 10px;
+                }
+            }
+
+            .userName{
+                text-transform: uppercase;
+                letter-spacing: 1.1px;
+            }
+
+            .navCart{
+                margin-left: 25px;
+            }
+        }
+    }
+}
